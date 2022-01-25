@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url('https://www.teahub.io/photos/full/58-581369_640-960-iphone-4-wallpaper-45-iphone-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.side-bar{
+    background: #ffffff1a;
+    backdrop-filter: blur(15px);
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:-100%;
+    overflow-y: auto;
+    transition: .8s linear;
+}
+.side-bar .active{
+      left: 0;  
+}
+.side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+
+    
+}
+.side-bar .menu .item{
+  position: relative;
+  cursor: pointer;  
+}
+
+.side-bar .menu .item a{
+    color: #fff;
+      font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 80px;
+}
+.side-bar .menu .item a:hover{
+    background: #8621f8;
+    transition: .3s ease;
+}
+.side-bar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: .3s ease;
+}
+.side-bar .menu .item .sub-menu{
+    background:#8621f8 ease ;
+    display: none;
+}
+.side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+}
+.rotate{
+    transform: rotate(90deg);
+}
+.close-btn{
+    position: absolute;
+    margin: 25px;
+    right: 0;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    color: #fff;
+}
+.menu-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+}
